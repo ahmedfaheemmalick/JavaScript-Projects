@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  font-family: "Oooh Baby", cursive;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  box-shadow: inset 0 0 0 5px rgba(148, 91, 91, 0.1);
+  color: white;
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+  background-size: cover;
+  background-position: center;
+}
+
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+.panel.open-active > *:first-child {
+  transform: translateY(0);
+}
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+.panel.open-active > *:last-child {
+  transform: translateY(0);
+}
+
+.open {
+  flex: 5;
+}
+
+.panel1 {
+  background: url("https://bit.ly/3Et3Uc3");
+}
+
+.panel2 {
+  background: url("https://bit.ly/3epl0wU");
+}
+
+.panel3 {
+  background: url("https://bit.ly/3HcoUFK");
+}
+
+.panel4 {
+  background: url("https://bit.ly/3yY00GL");
+}
+
+.panel5 {
+  background: url("https://bit.ly/3qlPpl7");
+}

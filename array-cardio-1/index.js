@@ -92,13 +92,13 @@ const data = [
 
 // console.log(reduce)
 
-const reduce = data.reduce((obj, item) => {
-  if (!obj[item]) {
-    obj[item] = 0
-  }
-  obj[item]++
+// const reduce = data.reduce((obj, item) => {
+//   if (!obj[item]) {
+//     obj[item] = 0
+//   }
+//   obj[item]++
 
-  return obj
-}, {})
+//   return obj
+// }, {})
 
-console.log(reduce)
+// console.log(reduce)
